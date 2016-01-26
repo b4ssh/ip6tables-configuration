@@ -77,7 +77,7 @@ ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 137 -j REJECT
 
 
 # Only allow selected ICMPv6 types in the FORWARD chain
-
+##### is it output/input or forward?
 ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 1 -j ACCEPT
 ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 2 -j ACCEPT
 ip6tables -A OUTPUT -p icmpv6 --icmpv6-type 3 -j ACCEPT
